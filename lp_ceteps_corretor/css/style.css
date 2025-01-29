@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.info {
+    background-color: #282a37;
+}
+
+.fone{
+    color: #007bff !important;
+}
+
+.fone span, i {
+    font-size: 3em;
+    font-family: 'Anton';
+    color: #007bff !important;
+    
+}
+
+.fone span a {
+    text-decoration: none;
+}
+
+
+i {
+    color: white !important;
+}
+
+.heromain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.7)
+    ), url('../images/corretor.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Garante que o SVG não ultrapasse os limites */
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Coloca a onda atrás do conteúdo */
+}
+
+.hero .form-container {
+    display: flex;
+    padding: 20px;
+    min-width: 350px;
+    align-items: center;
+    justify-content: center;
+
+    /* Degradê azul para azul claro */
+    background: linear-gradient(135deg, #007bff, #1d5b82);
+
+    /* Textura granulada */
+    background-image: 
+        linear-gradient(135deg, #007bff, #083c5c), /* Degradê */
+        url(''); /* Textura granulada */
+
+    background-size: cover, 300px 300px; /* Tamanho do degradê e da textura */
+    background-repeat: no-repeat, repeat; /* Degradê sem repetição e textura repetida */
+    background-blend-mode: overlay; /* Combinação do degradê e textura */
+    border-radius: 0; /* Arredondar bordas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+
+.heroTexto {
+    padding: 10px 10px 10px 0;
+}
+.hero .titulo {
+    font-size: 4em;
+    font-family: 'Roboto';
+    
+    max-width: auto;
+    color: #ededed;
+    margin-bottom: 50px;
+    
+    
+}
+
+.hero .titulo span {
+   font-family: 'Poppins';
+   /* text-decoration: underline; */
+   /* background-color: #007bffce; */
+   color: #ffffff;
+}
+
+.hero .leadTitulo {
+    font-size: 1.5em;
+    max-width:  auto;
+    font-family: 'roboto';
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+.curso-tecnico {
+    font-weight: bold;
+    color: #0056b3;
+    background: rgba(255, 255, 255, 0.853);
+    /* font-family: 'Montserrat'; */
+    
+}
+
+.meses4 {
+/* text-decoration: underline; */
+/* background-color: #1d5b82; */
+font-weight: bold;
+font-family: 'Montserrat';
+}
+
+.hero h2 {
+    font-family:  'Roboto';
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+}
+.hero p {
+    font-family:  'Roboto';
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    
+}
+
+label {
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+}
+/* Estilos gerais para inputs */
+input {
+    width: 100%; /* Ocupa 100% da largura do container */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 0px !important; /* Bordas arredondadas */
+    height: 50px; /* Altura padrão */
+    color: #9d9d9d; /* Cor do texto */
+    background-color: #f9f9f9; /* Fundo claro */
+    font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
+    font-weight: 400; /* Peso regular */
+    font-size: 1em; /* Tamanho do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação ao foco */
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #cacaca !important; /* Cor do placeholder */
+    font-style: italic; /* Estilo para diferenciar */
+}
+
+/* Foco no input */
+input:focus {
+    border-color: #007bff; /* Cor de borda no foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra ao redor */
+    outline: none; /* Remove a borda padrão de foco */
+}
+
+/* Botão */
+button[type="submit"] {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-family: 'Open Sans', sans-serif; /* Fonte */
+    font-size: 1.2em; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Arredondado */
+    padding: 15px; /* Espaçamento interno */
+    cursor: pointer; /* Mostra o cursor de clique */
+    transition: background-color 0.3s ease; /* Animação */
+}
+
+/* Botão ao passar o mouse */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+/* corretor */
+
+.corretormercado,.reviews{
+    text-align: left !important;
+    font-family: 'open sans';
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #343a40;
+}
+
+.corretormercado h1, .reviews h1 {
+font-family: 'Poppins';
+}
+.corretormercado h3, .reviews h3 {
+font-family: 'open sans';
+margin-bottom: 10px;
+}
+.corretormercado p, .reviews p {
+font-family: 'open sans';
+margin-bottom: 30px;
+}
+
+.cards {
+    text-align: center;
+    /* background-color: gray; */
+    margin: 0 auto;
+    /* background: red; */
+}
+
+.cardcorretor {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #9d9d9d;
+    padding: 10px;
+    text-align: center;
+    
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    
+    width: 100%;
+    
+    /* background-color: red; */
+}
+.salario {
+    font-size: 1.1em;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.valor {
+    font-size: 1.2em;
+    font-family: 'Poppins';
+    color: #007bff;
+}
+
+.accordion-body {
+    text-align: left !important;
+}
+
+.wave1 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Coloca a onda atrás do conteúdo */
+}
+
+
+
+.reviews {
+    background-color: #f6f6f6;
+    padding: 40px 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none;
+    border: none;
+}
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    font-size: 1.5rem;
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #555;
+    transition: 0.3s ease;
+}
+
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.whatsapp-button {
+    font-size: 0.2em !important;
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Estilos para telas grandes (notebooks e desktops maiores) */
+@media (min-width: 1200px) {
+    /* Estilos específicos para telas maiores */
+}
+
+/* Estilos para notebooks (média entre 992px e 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Estilos específicos para notebooks */
+    .heroTexto {
+        width: 50%;
+    }
+    .titulo {
+       font-size: 2em !important;
+    }
+}
+
+/* Estilos para tablets e telas médias (768px a 991px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Estilos específicos para tablets */
+    .heroTexto {
+        width: 50% !important;
+    }
+    .titulo {
+       font-size: 1em !important;
+    }
+}
+
+/* Estilos para smartphones grandes (576px a 767px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Estilos específicos para smartphones grandes */
+    .heroTexto {
+        width: 50% !important;
+    }
+    .titulo {
+       font-size: 1em !important;
+       margin-top: 50px !important;
+       margin-bottom: 0 !important;
+    }
+
+    .leadTitulo {
+        font-size: 1em !important;
+    }
+
+    .info img {
+        height: 30px;
+    }
+
+    .fone {
+        font-size: 0.8em;
+    }
+
+    .contactform {
+        /* background-color: red !important; */
+        z-index: 999 !important;
+        position: absolute;
+        width: 100% !important;
+        height: auto;
+
+    }
+
+    .cardcorretor {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para dispositivos móveis pequenos (até 575px) */
+@media (max-width: 575px) {
+    /* Estilos específicos para dispositivos móveis pequenos */
+    .fone span, i {
+        font-size: 1.5em;
+        font-family: 'Anton';
+        color: #007bff !important;
+        
+    }
+    .whatsapp-button i{
+        font-size: 2em !important;
+        color: white !important;
+    }
+
+    .fone span a {
+        text-decoration: none;
+    }
+
+    .info img{
+        height: 40px;
+    }
+    .titulo {
+        font-size: 2em !important;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .leadTitulo {
+        font-size: 1.2em !important;
+        text-align: center !important;
+        letter-spacing: 1px !important;
+    }
+
+    .cardcorretor {
+        margin-bottom: 25px;
+    }
+
+    .contactform {
+        width: 90%;
+    }
+
+    input {
+        width: 100%; /* Ocupa 100% da largura do container */
+        border: 1px solid #ccc; /* Borda leve */
+        border-radius: 0px !important; /* Bordas arredondadas */
+        height: 50px; /* Altura padrão */
+        color: #9d9d9d; /* Cor do texto */
+        background-color: #f9f9f9; /* Fundo claro */
+        font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
+        font-weight: 400; /* Peso regular */
+        font-size: 1em; /* Tamanho do texto */
+        padding: 10px 15px; /* Espaçamento interno */
+        box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação ao foco */
+    }
+
+    .hero {
+        min-height: 900px !important;
+    }
+}
+
+
+.notification {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification .title {
+    font-weight: bold;
+    display: block;
+}
+
+.notification .name {
+    font-size: 1.1rem;
+    display: block;
+}
+
+.notification .location {
+    font-size: 0.9rem;
+    display: block;
+    color: #ccc;
+}
